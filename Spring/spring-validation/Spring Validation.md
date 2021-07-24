@@ -141,7 +141,7 @@ Validation에 실패하면 message를 통해서 검증 실패 메시지를 출�
 
 검증 실패 시 아래와 같이 server error가 발생하고 message가 출력되는 것을 알 수 있습니다.
 
-![Spring-Validation/Untitled.png](Spring-Validation/Untitled.png)
+![Spring%20Validation/Untitled.png](Spring%20Validation/Untitled.png)
 
 ## Message 변경하기
 
@@ -190,7 +190,7 @@ public User get(@RequestParam @NotBlank String name,
 
 다음과 같이 message가 변경된 것을 확인할 수 있습니다
 
-![Spring-Validation/Untitled%201.png](Spring-Validation/Untitled%201.png)
+![Spring%20Validation/Untitled%201.png](Spring%20Validation/Untitled%201.png)
 
 # 검증 로직 커스텀하기
 
@@ -213,7 +213,7 @@ public User get(@RequestParam @NotBlank String name,
 **주의점 : 앞에 boolean값을 return 해야하며, 메서드 명에 접두사로 is를 붙여야합니다.
 안 붙이면 인식을 못 하더라구요..**
 
-![Spring-Validation/Untitled%202.png](Spring-Validation/Untitled%202.png)
+![Spring%20Validation/Untitled%202.png](Spring%20Validation/Untitled%202.png)
 
 Day라는 dto를 생성하고 이를 테스트해보겠습니다.
 
@@ -280,7 +280,7 @@ public class Api {
 
 postman을 이용해서 테스트를 해보면 validation이 잘 적용되는 것을 확인할 수 있네요!
 
-![Spring-Validation/Untitled%203.png](Spring-Validation/Untitled%203.png)
+![Spring%20Validation/Untitled%203.png](Spring%20Validation/Untitled%203.png)
 
 ## Annotation + Validator 정의하기
 
@@ -377,7 +377,7 @@ public class Api {
 
 이후에 postman으로 테스트 해보면 다음과 같이 검증 로직이 잘 적용되는 것을 확인할 수 있습니다!
 
-![Spring-Validation/Untitled%204.png](Spring-Validation/Untitled%204.png)
+![Spring%20Validation/Untitled%204.png](Spring%20Validation/Untitled%204.png)
 
 **주의!** 눈치채신 분도 있겠지만 이번 **items() GET API**에서 BindingResult를 매개변수로 사용하지 못 했습니다. `BindingResult`는 `@RequestBody` 혹은 `@RequestPart`사용 시에만 매개변수로 사용할 수 있으니 이 점 주의해주세요!
 
